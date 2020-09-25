@@ -1,0 +1,50 @@
+.header-page{
+  padding: 0 var(--padding-thin);
+
+  .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo img{
+    width: 50px;
+    margin-right: 20px;
+  }
+
+  h2{
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-principal{
+    width: 100%;
+
+    ul{
+      display: flex;
+      justify-content: space-between;
+
+      padding: 0;
+      list-style: none;
+
+      li{
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+//pour changer la grandeur du site lorsqu'on passe à des dimensions de Ipad
+@media screen and (min-width: $vw-medium){
+  .header-page{
+
+    .flex{
+      flex-direction: row;
+    }
+
+    .nav-principal{
+      width: auto;
+    }
+  }
+}
