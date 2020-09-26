@@ -1,1 +1,50 @@
-//commence par la version mobile, puis ajoute le media query pour la tablette, puis ajoute le media query pour le desktop.
+.services{
+  margin: var(--margin-large) 0;
+
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  article{
+    padding: 0 var(--padding-thin);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    header{
+      width: 10%;
+
+      img{
+        padding: var(--padding-large) 0;
+      }
+    }
+
+    h3{
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $vw-medium){
+  .services{
+    article{
+      width: 48%;
+    }
+
+    header{
+       width: 15%;
+     }
+  }
+}
+
+@media screen and (min-width: $vw-large){
+  .services{
+    article{
+      width: 33%;
+    }
+  }
+}
